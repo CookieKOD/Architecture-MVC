@@ -1,0 +1,204 @@
+/* Styles généraux */
+body {
+  background-color: #f4f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bannière */
+.banner {
+  background: linear-gradient(to right, rgb(67, 118, 194), rgb(242, 16, 201));
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Navigation des catégories */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-nav a {
+  transition: all 0.3s ease;
+}
+
+.category-nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cartes d'articles */
+.card-article {
+  border-left: 4px solid rgb(44, 71, 112);
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(10, 0, 152, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.card-article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(10, 0, 152, 0.2);
+}
+
+.card-article .card-title {
+  color: #2c4770;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-article .card-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.card-article .card-text {
+  line-height: 1.6;
+  color: #495057;
+}
+
+/* Boutons */
+.btn-lire {
+  background-color: rgb(211, 151, 192);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.btn-lire:hover {
+  background-color: rgb(174, 78, 168);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(174, 78, 168, 0.3);
+}
+
+/* Page d'article */
+.article-header {
+  background-image: url('../images/mauritanie.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.article-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.article-actions {
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+}
+
+.admin-actions {
+  padding-top: 1rem;
+  border-top: 1px solid #f8f9fa;
+}
+
+/* Formulaires */
+.form-control:focus {
+  border-color: rgb(67, 118, 194);
+  box-shadow: 0 0 0 0.2rem rgba(67, 118, 194, 0.25);
+}
+
+.form-select:focus {
+  border-color: rgb(67, 118, 194);
+  box-shadow: 0 0 0 0.2rem rgba(67, 118, 194, 0.25);
+}
+
+/* Messages d'alerte */
+.alert {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Page d'erreur */
+.card.border-danger {
+  border-color: #dc3545 !important;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+  
+  .banner p {
+    font-size: 1rem;
+  }
+  
+  .category-nav {
+    justify-content: center;
+  }
+  
+  .article-header {
+    padding: 40px 15px;
+  }
+  
+  .article-content {
+    padding: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-article {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Icônes Bootstrap */
+.bi {
+  margin-right: 0.5rem;
+}
+
